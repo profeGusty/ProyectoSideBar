@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6fa;
+}
+
+.container .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 1.5rem;
+    /* background: url(/img/Circles.svg) no-repeat; */
+    /* background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%); */
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    background-blend-mode: screen;
+    background-size: cover;
+
+    background-size: cover;
+
+    transition: all 0.3s;
+}
+
+.container .content .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85vh;
+    /* gap: 50px; */
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.container .content .box img {
+    max-width: 300px;
+    width: 100%;
+    height: 352px;
+}
+
+.container .content .box .text h3 {
+    font-size: 30px;
+    color: #5a68c4;
+    margin: 16px 0;
+}
+
+.container .content .box .text p {
+    line-height: 1.8;
+}
+/*-----LA CONCHA DE LA LORA -------*/
+.container .content .box:not(:first-of-type) {
+    display: none;
+}
+
+/*-------------------------------------------*/
+
+.sidebar{
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    outline: 1px solid #2a2a2a;
+
+}
+.sidebar h2{
+    text-align: center;
+    padding: 1rem;
+    background: #2a2a2a;
+}
+
+.sidebar ul{
+    margin-top: 5rem;
+    list-style: none;
+}
+
+.sidebar li{
+    outline: 1px solid #2a2a2a;
+    transition: border 0.3s;
+    padding: 1rem 2rem;
+}
+.active,
+.sidebar li:hover{
+    background: #444;
+    border-left: 5px solid #eee;
+}
+
+
+.menu-icon{
+    cursor: pointer;
+}
+.abrir{
+    transform: translateX(250px);
+}
